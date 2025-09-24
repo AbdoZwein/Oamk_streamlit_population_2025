@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #read csv file
-df_visu = pd.read_csv('./OAMK_Data_Analytics/population_country_columns.csv')
+df_visu = pd.read_csv('https://raw.githubusercontent.com/AbdoZwein/Oamk_streamlit_population_2025/refs/heads/main/population_country_columns.csv')
 #title of the dashboard
 st.title('Population of Countries Over the Years')
 # multiselect box for all columns except year (ie. countries)
@@ -24,4 +24,5 @@ plt.xlabel('Year')
 plt.ylabel('Population in millions')
 plt.legend(loc='upper left')
 plt.grid()
+
 st.pyplot(fig) # display the matplotlib figure in streamlit
